@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS smoll_talk;
+
+CREATE DATABASE smoll_talk;
