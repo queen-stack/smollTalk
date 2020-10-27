@@ -1,7 +1,7 @@
 # smollTalk
 CMS-style chat site similar to a Wordpress site, where communities can post and comment on other friends’ posts
 
-<h1 align="center">smolTalk</h1>
+<h1 align="center">smollTalk</h1>
   
 <p align="center">
     <img src="https://img.shields.io/badge/javascript-yellow" />
