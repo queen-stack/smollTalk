@@ -22,7 +22,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url(../images/homepageBg-1.jpg);
+    background: url(homepageBg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -38,13 +38,19 @@ body {
 }
 
 .hero-title-smoll {
+    font-size: 6rem;
+    /*
     font-size: 4rem;
+    */
     font-weight: 300;
     margin-bottom: 0;
 }
 
 .hero-title-talk {
+    font-size: 7rem;
+    /*
     font-size: 4rem;
+    */
     font-weight: 800;
     margin-bottom: 0;
 }
@@ -55,7 +61,6 @@ body {
     border: 1px solid #FC7B6E;
     margin-top: 5rem;
     font-family: "Monserrat", sans-serif;
-    font-size: 1.125rem;
     font-weight: 200;
     cursor: pointer;
 }
