@@ -38,19 +38,13 @@ body {
 }
 
 .hero-title-smoll {
-    font-size: 6rem;
-    /*
     font-size: 4rem;
-    */
     font-weight: 300;
     margin-bottom: 0;
 }
 
 .hero-title-talk {
-    font-size: 7rem;
-    /*
     font-size: 4rem;
-    */
     font-weight: 800;
     margin-bottom: 0;
 }
@@ -61,6 +55,7 @@ body {
     border: 1px solid #FC7B6E;
     margin-top: 5rem;
     font-family: "Monserrat", sans-serif;
+    font-size: 1.125rem;
     font-weight: 200;
     cursor: pointer;
 }
@@ -72,3 +67,89 @@ body {
 
 
 /* End of styling the css content */
+
+
+/* Styling for message dashboard */
+
+.individual-message {
+    padding: 15px;
+}
+
+.navbar-container {
+    padding: 15px;
+}
+
+.card {
+    border-radius: 2rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0), 0 10px 10px rgba(0, 0, 0, 0) inset;
+    background-color: #6CC5FF;
+    color: whitesmoke;
+    font-family: "Monserrat", sans-serif;
+    font-weight: 400;
+    font-size: 120%;
+    border: none;
+}
+
+.card:before,
+.card:after {
+    content: '';
+    position: absolute;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    border-radius: 40px / 20px;
+    z-index: -1;
+    top: 0%;
+    bottom: 10%;
+    left: 10px;
+    right: 10px;
+}
+
+
+/*
+.card:before,
+.card:after {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    border-radius: 100px / 10px;
+    z-index: -1;
+}
+*/
+
+.card-header {
+    background: none;
+    text-align: center;
+    border-bottom: none;
+}
+
+.navbar {
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    padding: 20px;
+    background: bisque;
+}
+
+
+/*
+nav {
+    position: relative;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    padding: 20px;
+    background: bisque;
+}
+*/
+
+.navbar:before,
+.navbar:after {
+    content: '';
+    position: absolute;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    border-radius: 100px / 20px;
+    z-index: -1;
+    top: 50%;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+}
+
+.nav-link-logout {
+    padding-right: 4rem;
+}
