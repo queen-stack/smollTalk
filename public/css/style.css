@@ -66,7 +66,7 @@ body {
 }
 
 
-/* End of styling the css content */
+/* End of styling the hero and homepage content */
 
 
 /* Styling for message dashboard */
@@ -103,16 +103,6 @@ body {
     right: 10px;
 }
 
-
-/*
-.card:before,
-.card:after {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-    border-radius: 100px / 10px;
-    z-index: -1;
-}
-*/
-
 .card-header {
     background: none;
     text-align: center;
@@ -125,17 +115,8 @@ body {
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
     padding: 20px;
     background: bisque;
+    margin-bottom: 20px;
 }
-
-
-/*
-nav {
-    position: relative;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-    padding: 20px;
-    background: bisque;
-}
-*/
 
 .navbar:before,
 .navbar:after {
@@ -153,3 +134,72 @@ nav {
 .nav-link-logout {
     padding-right: 4rem;
 }
+
+footer {
+    position: relative;
+    padding: 50px;
+    background: bisque;
+}
+
+.footer:before,
+.footer:after {
+    content: '';
+    position: absolute;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    z-index: -1;
+    top: 10%;
+    bottom: 10%;
+    left: 10px;
+    right: 10px;
+}
+
+.message-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #2f3640;
+    height: 60px;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.message-box:hover>.message-txt {
+    width: 250px;
+    padding: 0 6px
+}
+
+.message-box:hover>.message-btn {
+    background: white;
+    color: #2f3640;
+}
+
+.message-btn {
+    color: whitesmoke;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.message-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0;
+    /*width: 240px;*/
+}
+
+
+/* End of dashboard
