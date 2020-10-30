@@ -27,11 +27,11 @@ router.get('/:id', (req, res) => {
     }
   })
   .then(conversationData => {
-    if(!categoryData) {
+    if(!conversationData) {
       res.status(400).json({ message: 'Not found'});
       return;
     }
-    res.json(categoryData);
+    res.json(conversationData);
   })
   .catch(err => {
     console.log(err);
