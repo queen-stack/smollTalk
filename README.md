@@ -1,6 +1,4 @@
 # smollTalk
-CMS-style chat site similar to a Wordpress site, where communities can post and comment on other friends’ posts
-
 <h1 align="center">smollTalk</h1>
   
 <p align="center">
@@ -19,7 +17,7 @@ CMS-style chat site similar to a Wordpress site, where communities can post and 
   <br>Built using MySQL2, Express, Sequelize, Handlebars and dotenv. <br>
    As communities scale, guarantee your users a place to belong by empowering them to start conversations that matter. <br>
    Build a group channel to collaborate. Then grow your community with quality interactions in every conversation at once.<br>
-   Users who are logged in will be able to update and delete their existing posts through a dashboard UI.
+   Users who are logged in will be able to create and comment on posts through a dashboard UI.
 
 **[Deployed Application](https://_)**
   
@@ -35,7 +33,7 @@ CMS-style chat site similar to a Wordpress site, where communities can post and 
 ```
 GIVEN a CMS-style chat site
 WHEN I visit the site for the first time
-THEN I am presented with the homepage, which includes existing chat posts if any have been posted; navigation link for the homepage; with the option to log in
+THEN I am presented with the homepage, which includes existing chat posts if any have been posted starting with the current day; navigation link for the homepage; with the option to log in
 WHEN I click on the homepage option
 THEN I am taken to the homepage
 WHEN I click on any other links in the navigation
@@ -56,12 +54,10 @@ WHEN I enter a comment and click on the submit button while signed in
 THEN the comment is saved and the post is updated to display the comment, the comment creator’s username, and the date created
 WHEN I click on the homepage option in the navigation
 THEN I am taken to the homepage and presented with any chat posts I have already created and the option to add a new chat post
-WHEN I click on the button to add a new chat post
+WHEN I click on the button to add a new chat post then I am presented with a selection of topics to choose from to start the chat
 THEN I am prompted to enter contents for my chat post for all to comment on within the community
 WHEN I click on the button to create a new chat post
 THEN the contents of my post are saved and I am taken back to an updated homepage with my new chat post
-WHEN I click on one of my existing posts in the homepage
-THEN I am able to delete or update my post and taken back to an updated homepage
 WHEN I click on the logout option in the navigation
 THEN I am signed out of the site, returned to the homepage with the login / sign-up option
 ```
@@ -90,7 +86,7 @@ Run the following command at the root of  project and answer the prompted questi
 
 `mysql -uroot -p`
 
-Enter PW when promted
+Enter PW when prompted
 
 `source db/schema.sql`
 
@@ -100,19 +96,17 @@ Enter PW when promted
 
 ## Frontend Usage
 💻 
-`required login to create a chat post: username, password`
+`Required login to create a chat post: username, password`
 
-`Homepage displays all chats with comments count.  User can select to create a post, navigate to dashboard of all chats user has created.  User can Comment on other Users Chats. `
+`Homepage displays all chats with comments count.  User can select to create a post.  User can Comment on other Users Chats. `
 
-`Dashboard allows user to edit post, save edits made or delete post.`
-`If a deletion is done from the blog - this is not able to be reversed! Community Chatters beware!`
+`Homepage allows user to create a post from a select list of topics and make comments on existing posts.`
 
 ## Testing
 * see test file for TDD testing
 
 ## Contributing
 :octocat: [Jenifer Queen](https://github.com/queen-stack)
-[Jenifer Queen](https://github.com/queen-stack)
 [Nathalie](https://github.com/natswatch)
 [Michael Dreesen](https://github.com/mdreesen)
 
