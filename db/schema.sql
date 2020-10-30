@@ -1,3 +1,3 @@
-DROP DATABASE IF EXISTS smoll_talk;
+DROP DATABASE IF EXISTS smoll_talk_DB;
 
-CREATE DATABASE smoll_talk;
+CREATE DATABASE smoll_talk_DB;
