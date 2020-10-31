@@ -50,7 +50,7 @@ router.get('/conversation/:id', (req, res) => {
         include: [
         {
             model: Message,
-            attributes: ['id', 'message_text', 'converstion_id', 'user_id', 'created_at'],
+            attributes: ['id', 'message_text', 'conversation_id', 'user_id', 'created_at'],
             include: {
                 model: User,
                 attributes: ['username']
