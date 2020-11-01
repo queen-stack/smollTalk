@@ -1,7 +1,7 @@
 async function loginFormHandler(event) {
     event.preventDefault();
 
-    const username = document.querySelector('#login-email').value.trim();
+    const username = document.querySelector('#login-username').value.trim();
     const password = document.querySelector('#login-password').value.trim();
 
     if (username && password) {
@@ -15,7 +15,7 @@ async function loginFormHandler(event) {
         });
 
         if (response.ok) {
-            document.location.replace('/dashboard');
+            document.location.replace('/home');
         } else {
             alert('Invalid Login, Please check the Username and Password!'); //review the context TBD
         }
