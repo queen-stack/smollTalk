@@ -1,5 +1,5 @@
 const router = require('express').Router();
-//const { User, Post, Comment } = require('../../models');
+const { User, Conversation, Message } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 // GET- /api/users
@@ -122,7 +122,8 @@ router.post('/', (req, res) => {
 
 // PUT  -/api/users/1
 router.put('/:id', withAuth, (req, res) => {
-    User.update(req.body, {
+  console.log('in user put route'); 
+  User.update(req.body, {
         individualHooks: true,
         where: {
             id: req.params.id
