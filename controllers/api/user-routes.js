@@ -24,15 +24,11 @@ router.get('/:id', (req, res) => {
         },
         include: [
             {
-              model: Post,
-              attributes: ['id', 'topic', 'post_content', 'created_at']
-            },
-            {
-                model: Comment,
-                attributes: ['id', 'comment_text', 'created_at'],
+                model: Message,
+                attributes: ['id', 'message_text', 'created_at'],
                 include: {
-                  model: Post,
-                  attributes: ['topic']
+                  model: Conversation,
+                  attributes: ['topic_name']
                 }
             }
           ]

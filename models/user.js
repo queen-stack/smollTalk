@@ -25,10 +25,10 @@ User.init(
       type: DataTypes.STRING,
       allowNull: false
     },
-    linkedin: {
-      type: DataTypes.STRING,
-      allowNull: false
-    },
+    // linkedin: {
+    //   type: DataTypes.STRING,
+    //   allowNull: false
+    // },
     twitter: {
       type: DataTypes.STRING,
       allowNull: true

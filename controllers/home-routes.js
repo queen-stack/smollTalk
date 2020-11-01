@@ -27,16 +27,6 @@ router.get('/', (req, res) => {
     });
 });
 
-// routes the user back to homepage if they are already logged in
-router.get('/login', (req, res) => {
-    if(req.session.loggedIn) {
-        res.redirect('/');
-        return;
-    }
-
-    res.render('login');
-});
-
 router.get('/conversation/:id', (req, res) => {
     Conversation.findOne({
         where: {
@@ -65,7 +55,7 @@ router.get('/conversation/:id', (req, res) => {
 
         const conversation = conversationData.get({ plain: true });
 
-        res.render( 'placeholder', {
+        res.render( 'homepage', {
             conversation,
             loggedIn: req.session.loggedIn
         });
