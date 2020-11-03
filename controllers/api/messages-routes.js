@@ -5,7 +5,7 @@ const withAuth = require('../../utils/auth');
 // display all messages
 router.get('/', withAuth, (req, res) => {
     Message.findAll()
-        .then(commentData => res.json(messageData))
+        .then(messageData => res.json(messageData))
         .catch(err => {
             console.log(err);
             res.status(500).json(err);

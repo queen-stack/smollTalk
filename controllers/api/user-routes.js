@@ -53,9 +53,6 @@ router.post('/', (req, res) => {
       username: req.body.username,
       email: req.body.email,
       password: req.body.password,
-      linkedin: req.body.linkedin,
-      twitter: req.body.twitter,
-      github: req.body.github
     })
     .then(dbUserData => {
       req.session.save(() => {
@@ -68,6 +65,10 @@ router.post('/', (req, res) => {
     
         res.json(dbUserData);
       });
+    })
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
     });
   });
 
