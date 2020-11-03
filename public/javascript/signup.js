@@ -11,7 +11,7 @@ async function signupFormHandler(event) {
     console.log("this button was clicked")
 
     if (username && email && password && linkedin) {
-        await fetch('/api/users', {
+        const response = await fetch('/api/users', {
             method: 'post',
             body: JSON.stringify({
                 username,
@@ -26,12 +26,12 @@ async function signupFormHandler(event) {
         // console.log(response);
 
         // check the response status
-        // if (response.ok) {
+        if (response.ok) {
             console.log('success');
-        //     document.location.replace('/home');
-        // } else {
-        //     alert(response.statusText);
-        // }
+            document.location.replace('/home');
+        } else {
+            alert(response.statusText);
+        }
     }
 }
 
