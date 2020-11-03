@@ -2,9 +2,10 @@ const router = require('express').Router();
 const { response } = require('express');
 const sequelize = require('../config/connection');
 const { Conversation, User, Message } = require('../models');
+const withAuth = require('../utils/auth');
 
 // presents each topic with the count of messages
-router.get('/', (req, res) => {
+router.get('/', withAuth, (req, res) => {
     Conversation.findAll({
             attributes: [
                 'id',
@@ -62,18 +63,5 @@ router.get('/conversation/:id', (req, res) => {
             res.status(500).json(err);
         });
 });
-
-router.post('/logout', (req, res) => {
-    if (req.session.loggedIn) {
-        document.location.replace('/');
-        req.session.destroy(() => {
-        res.status(204).end();
-      });
-    }
-    else {
-      res.status(404).end();
-    }
-});
-
 
 module.exports = router;
