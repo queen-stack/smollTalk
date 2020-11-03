@@ -1,0 +1,26 @@
+<main>    
+    <nav class="navbar navbar-expand-sm">
+        <a href='/'><img src="./smolltalk2.png" width="150"></a>
+        
+       <h3 class ="topic-finances">Finances</h3>
+        <div class="navbar-nav ml-auto">
+            <a class="nav-link-home" href="/">Home</a>
+            <a class="nav-link-logout" href="/logout">Logout</a>
+        </div>
+    </nav>
+
+    {{> messages conversation.messages}}
+
+</main>
+<div class="footer-container">
+    
+    <footer class="footer navbar-expand-sm"></footer>
+        <div class="message-box">
+            <input class="message-txt" type="text" name="" placeholder="Message">
+            <a class="message-btn" href="#">
+                <i class="far fa-envelope"></i>
+            </a>
+        </div>
+        <div class="last"><span >SmollTalk 2020 &#169;</span></div>
+    </footer>
+</div>
