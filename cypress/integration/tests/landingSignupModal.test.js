@@ -45,9 +45,9 @@ class landingSignupModal {
         // Verifies user input inside the "Password" field
         cy.get('#signup-password-input').type('passwordTest');
         // Verifying the LinkedIn field
-        cy.get('#signup-linkedin-field').should('be.visible');
+        cy.get('#signup-linkedin-input').should('be.visible');
         // Verifying user input inside the "LinkedIn" field
-        cy.get('#signup-linkedin-field').type('https://www.linkedin.com/in/unavailable/');
+        cy.get('#signup-linkedin-input').type('https://www.linkedin.com/in/unavailable/');
         // Verifying the Github field
         cy.get('#signup-github-input').should('be.visible');
         // Verifying user input inside the "Github" field
