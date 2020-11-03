@@ -4,46 +4,23 @@
         
        <h3 class ="topic-finances">Finances</h3>
         <div class="navbar-nav ml-auto">
-            <a class="nav-link-logout" href="#">Logout</a>
+            <a class="nav-link-home" href="/">Home</a>
+            <a class="nav-link-logout" href="/logout">Logout</a>
         </div>
     </nav>
-    <!-- Message Cards -->
-    <div class="message-container">
-        <div class="speech-bubble-ds">
-            
-            <p>This is CSS speech bubble with borders and drop shadow.</p>
-            <div class="author">username L T G</div>
-            <div class="speech-bubble-ds__arrow"></div>
-            
-        </div>
-        
-        <div class="speech-bubble-ds">
-            <p><strong>Demo speech bubble</strong></p>
-            <p>This is CSS speech bubble with borders and drop shadow.</p>
-            <div class="speech-bubble-ds__arrow"></div>
-        </div>
-        <div class="speech-bubble-ds">
-            <p><strong>Demo speech bubble</strong></p>
-            <p>This is CSS speech bubble with borders and drop shadow.</p>
-            <div class="speech-bubble-ds__arrow"></div>
-        </div>
-        <div class="speech-bubble-ds">
-            <p><strong>Demo speech bubble</strong></p>
-            <p>This is CSS speech bubble with borders and drop shadow.</p>
-            <div class="speech-bubble-ds__arrow"></div>
-        </div>
-        <!-- End of message 3-->
-    </div>
+
+    {{> messages conversation.messages}}
+
 </main>
-    <div class="footer-container">
-        
-        <footer class="footer navbar-expand-sm"></footer>
-            <div class="message-box">
-                <input class="message-txt" type="text" name="" placeholder="Message">
-                <a class="message-btn" href="#">
-                    <i class="far fa-envelope"></i>
-                </a>
-            </div>
-            <div class="last"><span >SmollTalk 2020 &#169;</span></div>
-        </footer>
-    </div>
+<div class="footer-container">
+    
+    <footer class="footer navbar-expand-sm"></footer>
+        <div class="message-box">
+            <input class="message-txt" type="text" name="" placeholder="Message">
+            <a class="message-btn" href="#">
+                <i class="far fa-envelope"></i>
+            </a>
+        </div>
+        <div class="last"><span >SmollTalk 2020 &#169;</span></div>
+    </footer>
+</div>

@@ -1,0 +1,11 @@
+
+<!-- Message bubbles -->
+<div class="message-container">
+    {{#each this}}
+    <div class="speech-bubble-ds">      
+        <p>{{message_text}}</p>
+        <div class="author">by {{user.username}} on {{format_date created_at}}</div>
+        <div class="speech-bubble-ds__arrow"></div>
+    </div>
+    {{/each}}
+</div>
