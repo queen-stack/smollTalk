@@ -12,7 +12,7 @@ class landingSignupModal {
     }
     static signupModalBtn() {
         // Verifies the "signup" modal button is clickable and opens the modal
-        cy.get('#signupModalBtn').click();
+        cy.get('#signupBtn').click();
     }
 
     // Verifying the Username text above the username input field
@@ -70,7 +70,7 @@ class landingSignupModal {
 }
 
 describe('login and signup modals', () => {
-    it('verifies functionality of the login and signup modals', () => {
+    it('landingSignupModal.test.js', () => {
         landingSignupModal.loadPage();
         landingSignupModal.signupModalBtn();
         landingSignupModal.signupText();
