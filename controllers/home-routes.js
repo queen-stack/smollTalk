@@ -63,5 +63,17 @@ router.get('/conversation/:id', (req, res) => {
         });
 });
 
+router.post('/logout', (req, res) => {
+    if (req.session.loggedIn) {
+        document.location.replace('/');
+        req.session.destroy(() => {
+        res.status(204).end();
+      });
+    }
+    else {
+      res.status(404).end();
+    }
+});
+
 
 module.exports = router;
