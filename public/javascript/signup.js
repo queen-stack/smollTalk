@@ -5,6 +5,8 @@ async function signupFormHandler(event) {
     const email = document.querySelector('#signup-email-input').value.trim();
     const password = document.querySelector('#signup-password-input').value.trim();
     const linkedin = document.querySelector('#signup-linkedin-input').value.trim();
+    const github = document.querySelector('#signup-github-input').value.trim();
+    const twitter = document.querySelector('#signup-twitter-input').value.trim();
 
 
     console.log("this button was clicked")
@@ -16,7 +18,9 @@ async function signupFormHandler(event) {
                 username,
                 email,
                 password,
-                linkedin
+                linkedin,
+                github,
+                twitter
             }),
             headers: { 'Content-Type': 'application/json' }
         });

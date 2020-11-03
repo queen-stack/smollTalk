@@ -19,7 +19,7 @@ async function loginFormHandler(event) {
         if (response.ok) {
             document.location.replace('/home');
         } else {
-            alert('Invalid Login, Please check the Username and Password!'); //review the context TBD
+            alert('Invalid Login, Please check the Username and Password!');
         }
     }
 }
