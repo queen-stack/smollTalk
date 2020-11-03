@@ -8,11 +8,10 @@ async function signupFormHandler(event) {
     const github = document.querySelector('#signup-github-input').value.trim();
     const twitter = document.querySelector('#signup-twitter-input').value.trim();
 
-
     console.log("this button was clicked")
 
     if (username && email && password && linkedin) {
-        const response = await fetch('/api/users', {
+        await fetch('/api/users', {
             method: 'post',
             body: JSON.stringify({
                 username,
@@ -24,14 +23,15 @@ async function signupFormHandler(event) {
             }),
             headers: { 'Content-Type': 'application/json' }
         });
+        // console.log(response);
 
         // check the response status
-        if (response.ok) {
+        // if (response.ok) {
             console.log('success');
-            document.location.replace('/home');
-        } else {
-            alert(response.statusText);
-        }
+        //     document.location.replace('/home');
+        // } else {
+        //     alert(response.statusText);
+        // }
     }
 }
 
