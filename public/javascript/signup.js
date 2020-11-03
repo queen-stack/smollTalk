@@ -1,10 +1,13 @@
 async function signupFormHandler(event) {
     event.preventDefault();
 
-    const username = document.querySelector('#signup-username').value.trim();
-    const email = document.querySelector('#signup-email').value.trim();
-    const password = document.querySelector('#signup-password').value.trim();
-    const linkedin = document.querySelector('#signup-linkedin').value.trim();
+    const username = document.querySelector('#signup-username-input').value.trim();
+    const email = document.querySelector('#signup-email-input').value.trim();
+    const password = document.querySelector('#signup-password-input').value.trim();
+    const linkedin = document.querySelector('#signup-linkedin-input').value.trim();
+
+
+    console.log("this button was clicked")
 
     if (username && email && password && linkedin) {
         const response = await fetch('/api/users', {
@@ -28,5 +31,4 @@ async function signupFormHandler(event) {
     }
 }
 
-//document.querySelector('#signUpModal').addEventListener('submit', signupFormHandler);
-document.querySelector('#signUpBtn').addEventListener('click', signupFormHandler);
+document.querySelector('#signupModalBtn').addEventListener('click', signupFormHandler);
