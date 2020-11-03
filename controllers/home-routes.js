@@ -14,7 +14,7 @@ router.get('/', (req, res) => {
         .then(conversationData => {
             // pass a single conversation object into the homepage template
             const conversations = conversationData.map(conversation => conversation.get({ plain: true }));
-            res.render('homepage', {
+            res.render('home', {
                 conversations,
                 loggedIn: req.session.loggedIn
             });
