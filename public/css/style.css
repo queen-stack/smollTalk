@@ -59,6 +59,7 @@ body {
     align-items: center;
 }
 
+
 button {
     margin-top: 2.5em;
     font-family: "Monserrat", sans-serif;
@@ -117,10 +118,26 @@ h1 {
     font-size: 24px;
 }
 
-a {
-    color: white;
+h3 {
+    font-size: 30px;
+    font-weight: 900;
+    color:#181b2b;
+}
+p {
     font-size: 18px;
+    font-weight: 400;
+    color: #181b2b;
+}
+
+
+.home, .logout {
+    color: white;
+    font-size: 20px;
     font-style: bold;
+    margin-right: 3rem;
+}
+a {
+    color: black;
 }
 
 a:hover {
@@ -222,6 +239,13 @@ a:hover {
     top: 0;
     width: 100%;
 }
+img {
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.links {
+    padding-top: 10px;
+}
 
 .navbar:before,
 .navbar:after {
@@ -236,10 +260,6 @@ a:hover {
     right: 10px;
 }
 
-.nav-link-logout {
-    padding-right: 4rem;
-}
-
 .author {
     display: flex;
     font-size: 90%;
@@ -247,6 +267,10 @@ a:hover {
     justify-content: flex-end;
 }
 
+.topics-button {
+    font-size: 18px;
+    color: black;
+}
 footer {
     background-color: #152454;
     color: #aabed7;

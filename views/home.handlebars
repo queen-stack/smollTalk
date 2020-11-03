@@ -1,34 +1,44 @@
 
 <main>
         <nav class="navbar navbar-expand-sm">
-                <a href='/'><img src="./smolltalk2.png" width="150"></a>
-                <div class="navbar-nav ml-auto">
-                <a id="logoutBtn" class="nav-link-logout" href="#">Logout</a>
+                <a class="logo" href='/'><img src="/images/smolltalk.png" width="150"></a>
+                <div class="links navbar-nav navbar-right ml-auto">
+                <a class="home" href="/"><strong>Home</strong></a>
+                <a class="logout" href="/logout"><strong>Logout</strong></a>
                 </div>
         </nav>
 <!-- Homepage content -->
+<div class="hero">
     <section class="hero-topics">
         <div>
             <h3>Welcome to SmollTalk!</h3>
             <p>This is a place where you can find your own virtual community.<br>
             Click on a topic below to start a conversation:</p>
-            <button type="button" class="btn politics-btn">
-                    POLITICS
+            <div class="topics-buttons">
+            <a href='/conversation/1'><button type="button" class="btn politics-btn" id="politics">
+                    <strong>POLITICS</strong>
                     </button>
-            <button type="button" class="btn covid-btn">
-                    COVID
+                    </a>
+            <a href='/conversation/2'><button type="button" class="btn covid-btn" id="covid">
+                    <strong>COVID</strong>
                     </button>
-            <button type="button" class="btn sports-btn">
-                    SPORTS
+                    </a>
+            <a href='/conversation/3'><button type="button" class="btn sports-btn" id="sports">
+                    <strong>SPORTS</strong>
                     </button>
-            <button type="button" class="btn finances-btn">
-                    FINANCES
+                    </a>
+            <a href='/conversation/4'><button type="button" class="btn finances-btn" id="finances">
+                    <strong>FINANCES</strong>
                     </button>
-            <button type="button" class="btn crpycraigslist-btn">
-                    CREEPY CRAIGSLIST
+                    </a>
+            <a href='/conversation/4'><button type="button" class="btn crpycraigslist-btn" id="craigslist">
+                <strong>CREEPY CRAIGSLIST</strong>
                     </button>
+                    </a>
+                </div>
         </div>
     </section>
+    </div>
 </main>
         <footer class="footer navbar-expand-sm">
                 <div class="last"><span >SmollTalk 2020 &#169;</span></div>
