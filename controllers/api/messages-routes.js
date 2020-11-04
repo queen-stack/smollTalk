@@ -13,11 +13,11 @@ router.get('/', withAuth, (req, res) => {
 });
 
 // post a message
-router.post('/',  (req, res) => {
+router.post('/',  withAuth, (req, res) => {
     if (req.session) {
         Message.create({
                 message_text: req.body.message_text,
-                user_id: req.body.user_id,
+                user_id: req.session.user_id,
                 conversation_id: req.body.conversation_id
             })
             .then(newMessageData => res.json(newMessageData))

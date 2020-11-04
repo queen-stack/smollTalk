@@ -28,10 +28,11 @@ router.get('/:id', (req, res) => {
   })
   .then(conversationData => {
     if(!conversationData) {
-      res.status(400).json({ message: 'Not found'});
+      res.status(400).json({ message: 'No messages found in this topic'});
       return;
     }
-    res.json(conversationData);
+    const messages = conversationData.map(message => message.get({ plain : true }))
+    res.render('conversation', { messages, loggedIn:true });
   })
   .catch(err => {
     console.log(err);
