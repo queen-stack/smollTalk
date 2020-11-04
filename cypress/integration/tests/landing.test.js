@@ -14,7 +14,7 @@ class landing {
     // Verifying the title on the landing page "SmollTalk"
     static verifyTitle() {
         // Verifies the title "SmollTalk" on the homepage
-        cy.get('.hero-title-smoll').should('contain', 'SmollTalk');
+        cy.get('#smollTalkLogo').should('be.visible');
     }
 
     // Verifying the modal buttons on the landing page
