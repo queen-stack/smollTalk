@@ -1,20 +1,19 @@
-<main>    
-    <nav class="navbar navbar-expand-sm">
-        <a href='/'><img src="./smolltalk2.png" width="150"></a>
-        
-       <h3 class ="topic-finances">Finances</h3>
-        <div class="navbar-nav ml-auto">
-            <a class="nav-link-home" href="/">Home</a>
-            <a class="nav-link-logout" href="/logout">Logout</a>
-        </div>
-    </nav>
+<main>
+        <nav class="navbar navbar-expand-sm">
+                <a class="logo" href='/'><img src="/images/smolltalk.png" width="150"></a>
+                {{> topic-heading }}
+                <div class="links navbar-nav navbar-right ml-auto">
+                <a class="home" href="/home"><strong>Home</strong></a>
+                <a class="logout" href="/" id="logoutBtn"><strong>Logout</strong></a>
+                </div>
+        </nav>
 
     {{> messages conversation.messages}}
 
 </main>
-<div class="footer-container">
+<div class="footer-container"></div>
     
-    <footer class="footer navbar-expand-sm"></footer>
+    <footer class="footer navbar-expand-sm">
         <div class="message-box">
             <input class="message-txt" type="text" name="" placeholder="Message">
             <a class="message-btn" href="#">

@@ -13,7 +13,7 @@ router.get('/', withAuth, (req, res) => {
 });
 
 // post a message
-router.post('/', withAuth, (req, res) => {
+router.post('/',  (req, res) => {
     if (req.session) {
         Message.create({
                 message_text: req.body.message_text,
