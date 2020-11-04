@@ -2,6 +2,7 @@ const router = require('express').Router();
 const { response } = require('express');
 const sequelize = require('../config/connection');
 const { Conversation, User, Message } = require('../models');
+const withAuth = require('../utils/auth');
 
 // routes the user back to homepage if they are already logged in
 router.get('/', (req, res) => {
