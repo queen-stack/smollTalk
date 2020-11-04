@@ -16,7 +16,7 @@ Conversation.hasMany(Message, {
 
 Message.belongsTo(Conversation, {
     foreignKey: 'conversation_id'
-})
+});
 
 
 module.exports = { User, Message, Conversation };
