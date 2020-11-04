@@ -73,25 +73,25 @@ button:hover {
     opacity: .8;
 }
 
-.politics-btn {
+#politicsBtn {
     background-color: #a9bfff;
     border-radius: 4px;
     border: none;
 }
 
-.covid-btn {
+#covidBtn {
     background-color: #fd7e5a;
 }
 
-.sports-btn {
+#sportsBtn {
     background-color: #45b6fd;
 }
 
-.finances-btn {
+#financesBtn {
     background-color: #5ad0ae;
 }
 
-.crpycraigslist-btn {
+#craigslistBtn {
     background-color: #ffb221;
 }
 

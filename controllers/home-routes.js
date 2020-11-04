@@ -46,13 +46,13 @@ router.get('/conversation/:id', (req, res) => {
             }]
         })
         .then(conversationData => {
-            if (!dbPostData) {
+            if (!conversationData) {
                 res.status(404).json({ message: 'No post found with this id ' });
                 return;
             }
             const conversation = conversationData.get({ plain: true });
 
-            res.render('home', {
+            res.render('conversation', {
                 conversation,
                 loggedIn: req.session.loggedIn
 
