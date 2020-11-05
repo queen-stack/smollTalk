@@ -1,6 +1,6 @@
-const User = require('./user');
-const Message = require('./message');
-const Conversation = require('./conversation');
+const User = require('./User');
+const Message = require('./Message');
+const Conversation = require('./Conversation');
 
 User.hasMany(Message, {
     foreignKey: 'user_id'

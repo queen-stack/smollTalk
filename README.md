@@ -19,13 +19,13 @@
    Build a group channel to collaborate. Then grow your community with quality interactions in every conversation at once.<br>
    Users who are logged in will be able to create and comment on posts through a dashboard UI.
 
-**[Deployed Application](https://salty-citadel-09987.herokuapp.com)**
+**[Deployed Application](https://)**
   
 💻 Below are screenshots of the application:
   
-![create sign up: smollTalk](./public/stylesheets/images/create_acct.png)
-![login: smollTalk](./public/stylesheets/images/login.png)
-![homepage: smollTalk](./public/stylesheets/images/homepage.png)
+![create sign up: smollTalk](./public/images/create_acct.png)
+![conversation: smollTalk](./public/images/conversation.png)
+![homepage: smollTalk](./public/images/homepage.png)
 
 
 ## Acceptance Criteria
