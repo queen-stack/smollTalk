@@ -19,7 +19,7 @@
    Build a group channel to collaborate. Then grow your community with quality interactions in every conversation at once.<br>
    Users who are logged in will be able to create and comment on posts through a dashboard UI.
 
-**[Deployed Application](https://)**
+**[Deployed Application](https://limitless-shelf-64509.herokuapp.com/)**
   
 💻 Below are screenshots of the application:
   
