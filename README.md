@@ -107,7 +107,7 @@ tested E2E front end
 Ability to view and modify own profile information
 Ability to link a reply to a specific message
 Ability for creator to edit their posted message 
-Add topic description to conversation dynamically 
+Add topic description to conversation navigation bar dynamically 
 
 ```
 
