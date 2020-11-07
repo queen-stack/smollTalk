@@ -92,9 +92,9 @@ Enter PW when prompted
 💻 
 `Required login to create a chat post: username, email, password, linkedin`
 
-`Homepage displays Homepage displays all chats with comments count.  User can select to create a post.  User can Comment on other Users Chats. `
+`Homepage displays all topics when logged in.  User can select to create a message.  User can Comment on other Users Chats. `
 
-`Homepage allows user to create a post from a select list of topics and make comments on existing posts.`
+`Homepage allows user to create a post from a select list of topics and make comments on existing posts providing they are logged in.`
 
 ## Testing
 
@@ -102,8 +102,17 @@ Enter PW when prompted
 npm run cypress:run -- --browser chrome
 tested E2E front end 
 
+### Future Enhancements
+```
+Ability to view and modify own profile information
+Ability to link a reply to a specific message
+Ability for creator to edit their posted message 
+Add topic description to conversation dynamically 
+
+```
+
 ## Contributing
-:octocat: [Jenifer Queen](https://github.com/queen-stack)
+:octocat: [Jenifer Queen](https://queen-stack.github.io/Challeng2/)
 [Nathalie](https://github.com/natswatch)
 [Michael Dreesen](https://github.com/mdreesen)
 
