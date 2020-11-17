@@ -112,7 +112,7 @@ Add topic description to conversation navigation bar dynamically
 ```
 
 ## Contributing
-:octocat: [Jenifer Queen](https://queen-stack.github.io/Challeng2/)
+:octocat: [Jenifer Queen](https://queen-stack.github.io/profile/)
 [Nathalie](https://github.com/natswatch)
 [Michael Dreesen](https://github.com/mdreesen)
 
